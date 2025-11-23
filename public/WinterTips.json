@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "icon": "❄️",
+    "title": "Keep Your Pet Warm Indoors",
+    "text": "Ensure your pet stays warm indoors during cold weather. Provide soft bedding and avoid exposing them to freezing floors."
+  },
+  {
+    "id": 2,
+    "icon": "🐾",
+    "title": "Moisturize Paws Regularly",
+    "text": "Cold weather may crack your pet’s paws. Use pet-safe balms to moisturize and protect them from harsh winter surfaces."
+  },
+  {
+    "id": 3,
+    "icon": "🧥",
+    "title": "Limit Outdoor Time",
+    "text": "Short walks in harsh cold help prevent frostbite and discomfort. Stay alert to your pet’s signals and body language."
+  },
+  {
+    "id": 4,
+    "icon": "💧",
+    "title": "Hydrate & Maintain Nutrition",
+    "text": "Pets lose moisture faster in winter. Keep water bowls filled and provide nutritious meals to support their overall health."
+  }
+]

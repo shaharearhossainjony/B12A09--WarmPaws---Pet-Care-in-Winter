@@ -1,11 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Navbar = () => {
     return (
       <div className="navbar bg-base-100 shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost lg:hidden z-50"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -27,33 +32,70 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Home</a>
+                <Link
+                  to={"/"}
+                  className="bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent"
+                >
+                  Home
+                </Link>
               </li>
               <li>
-                <a>Services</a>
+                <Link
+                  to={"/services"}
+                  className="bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent"
+                >
+                  Services
+                </Link>
               </li>
               <li>
-                <a>Profile</a>
+                <Link
+                  to={"/profile"}
+                  className="bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent"
+                >
+                  Profile
+                </Link>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">WarmPaws</a>
+          <a className="btn btn-ghost font-bold text-xl bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent">
+            WarmPaws
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Home</a>
+              <Link
+                to={"/"}
+                className="bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent"
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <a>Services</a>
+              <Link
+                to={"/services"}
+                className="bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent"
+              >
+                Services
+              </Link>
             </li>
             <li>
-              <a>Profile</a>
+              <Link
+                to={"/profile"}
+                className="bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent"
+              >
+                Profile
+              </Link>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Login</a>
+          <Link
+            to={"/login"}
+            className="btn bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent"
+          >
+            Login
+          </Link>
         </div>
       </div>
     );

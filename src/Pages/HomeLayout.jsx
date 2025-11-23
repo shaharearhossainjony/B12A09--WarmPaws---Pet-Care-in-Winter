@@ -1,12 +1,14 @@
 import React from 'react';
 import Navbar from '../Components/Navbar/Navbar';
-import HeroSlider from '../Components/HeroSlider/HeroSlider';
+import Footer from '../Components/Footer/Footer';
+import { Outlet } from 'react-router';
 
 const HomeLayout = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <HeroSlider></HeroSlider>
+            <Outlet></Outlet>
+            <Footer></Footer>
         </div>
     );
 };
