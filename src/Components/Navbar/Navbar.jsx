@@ -16,7 +16,7 @@ const Navbar = () => {
                 className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
+                stroke="purple"
               >
                 {" "}
                 <path
@@ -34,7 +34,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/"}
-                  className="bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent"
+                  className="bg-gradient-to-r font-bold from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent"
                 >
                   Home
                 </Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/services"}
-                  className="bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent"
+                  className="bg-gradient-to-r font-bold  from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent"
                 >
                   Services
                 </Link>
@@ -50,7 +50,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/profile"}
-                  className="bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent"
+                  className="bg-gradient-to-r font-bold  from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent"
                 >
                   Profile
                 </Link>
@@ -66,7 +66,7 @@ const Navbar = () => {
             <li>
               <Link
                 to={"/"}
-                className="bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent"
+                className="bg-gradient-to-r font-bold  from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent"
               >
                 Home
               </Link>
@@ -74,7 +74,7 @@ const Navbar = () => {
             <li>
               <Link
                 to={"/services"}
-                className="bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent"
+                className="bg-gradient-to-r font-bold  from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent"
               >
                 Services
               </Link>
@@ -82,7 +82,7 @@ const Navbar = () => {
             <li>
               <Link
                 to={"/profile"}
-                className="bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent"
+                className="bg-gradient-to-r font-bold  from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent"
               >
                 Profile
               </Link>

@@ -5,7 +5,8 @@ import Services from "../Components/Services/Services";
 import Profile from "../Components/Profile/Profile";
 import Login from "../Components/Login/Login";
 import Register from "../Components/Register/Register";
-import ServiceDetailsCard from "../Components/ServiceDetailsCard/ServiceDetailsCard";
+import ServiceDetails from "../Components/ServiceDetails/ServiceDetails";
+import ProfileUpdate from "../Components/ProfileUpdate/ProfileUpdate";
 
 const router = createBrowserRouter([
   {
@@ -22,11 +23,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/services/:id",
-        element: <ServiceDetailsCard></ServiceDetailsCard>,
+        element: <ServiceDetails></ServiceDetails>,
       },
       {
         path: "/profile",
         element: <Profile></Profile>,
+      },
+      {
+        path: "/profile/update",
+        element: <ProfileUpdate></ProfileUpdate>,
       },
       {
         path: "/login",

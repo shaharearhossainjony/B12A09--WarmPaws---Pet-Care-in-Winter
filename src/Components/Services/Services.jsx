@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ServiceCard from "../ServiceCard/ServiceCard";
+import Loader from "../Loader/Loader";
 
 const Services = () => {
   const [allServices, setAllServices] = useState([]);
@@ -10,8 +11,13 @@ const Services = () => {
       .then((data) => setAllServices(data))
       .catch((error) => console.log(error));
   }, []);
+
+  if (allServices.length === 0) {
+    return <Loader></Loader>
+  }
   return (
     <div>
+      <title>Services</title>
       <div className="text-center mt-5 ">
         <h2 className="text-4xl font-extrabold bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent">
           Explore Our Winter Pet Care Services

@@ -7,7 +7,9 @@ import HeroWelcome from '../HeroWelcome/HeroWelcome';
 
 const Home = () => {
     return (
+
         <div className=''>
+            <title>WarmPaws - Home</title>
             <HeroWelcome></HeroWelcome>
             <HeroSlider></HeroSlider>
             <PopularWinterCareServices></PopularWinterCareServices>

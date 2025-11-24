@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ServiceCard from "../ServiceCard/ServiceCard";
+import Loader from "../Loader/Loader";
 
 const PopularWinterCareServices = () => {
   const [careServices, setCareServices] = useState([]);
@@ -10,6 +11,9 @@ const PopularWinterCareServices = () => {
       .then((data) => setCareServices(data))
       .catch((error) => console.log(error));
   }, []);
+  if (careServices.length === 0) {
+    return <Loader></Loader>
+  }
   return (
     <div className="my-10 text-center">
       <h2 className="text-3xl font-extrabold bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent">

@@ -19,10 +19,15 @@ const Login = () => {
                 <div>
                   <a className="link link-hover">Forgot password?</a>
                 </div>
-                <button className="btn btn-neutral mt-4">Login</button>
+                <button className="btn  mt-4  bg-purple-700 hover:bg-purple-800 text-white">
+                  Login
+                </button>
                 <p className="font-semibold text-center pt-5">
                   Dont’t Have An Account ?{" "}
-                  <Link className="text-secondary" to="/register">
+                  <Link
+                    className="bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent"
+                    to="/register"
+                  >
                     Register
                   </Link>
                 </p>
