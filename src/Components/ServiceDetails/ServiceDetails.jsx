@@ -1,31 +1,3 @@
-// import React, { useEffect, useState } from 'react';
-// import ServiceDetailsCard from '../ServiceDetailsCard/ServiceDetailsCard';
-// import { useParams } from 'react-router';
-
-// const ServiceDetails = () => {
-//     const [allServices, setAllServices] = useState([]);
-
-//     const { id } = useParams();
-//     console.log(id);
-
-//     useEffect(() => {
-//       fetch("./services.json")
-//         .then((result) => result.json())
-//         .then((data) => setAllServices(data))
-//             .catch((error) => console.log(error));
-        
-//         const service = allServices.find((service) => service.serviceId == id);
-//     }, [id]);
-
-//     return (
-//         <div>
-//             service details paeg
-//             <ServiceDetailsCard></ServiceDetailsCard>
-//         </div>
-//     );
-// };
-// export default ServiceDetails;
-
 import React, { useEffect, useState } from "react";
 import ServiceDetailsCard from "../ServiceDetailsCard/ServiceDetailsCard";
 import { useParams } from "react-router";
@@ -51,9 +23,7 @@ const ServiceDetails = () => {
   }, [allServices, id]);
 
   if (!singleService) {
-    return (
-      <Loader></Loader>
-    );
+    return <Loader></Loader>;
   }
 
   return (

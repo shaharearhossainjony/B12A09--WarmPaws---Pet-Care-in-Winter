@@ -20,7 +20,7 @@ const PopularWinterCareServices = () => {
         Popular Winter Care Services
       </h2>
       <div className="w-11/12  mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-10 ">
-        {careServices.slice(0, 9).map((service) => (
+        {careServices.slice(0,6).map((service) => (
           <ServiceCard key={service.serviceId} service={service}></ServiceCard>
         ))}
       </div>

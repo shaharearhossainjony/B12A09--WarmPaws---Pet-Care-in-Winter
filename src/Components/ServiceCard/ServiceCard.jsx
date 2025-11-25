@@ -17,8 +17,8 @@ const ServiceCard = ({ service }) => {
                 {serviceName}
               </h2>
               <div className="flex font-bold">
-                <p className="">Price : ${price} USD</p>
-                <p className="">Rating : {rating}</p>
+                <p className="text-gray-600">Price : ${price} USD</p>
+                <p className="text-gray-600">Rating : {rating}</p>
               </div>
               <div className="card-actions w-full justify-center">
                 <Link

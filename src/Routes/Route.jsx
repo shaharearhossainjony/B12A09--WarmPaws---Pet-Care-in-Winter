@@ -7,40 +7,61 @@ import Login from "../Components/Login/Login";
 import Register from "../Components/Register/Register";
 import ServiceDetails from "../Components/ServiceDetails/ServiceDetails";
 import ProfileUpdate from "../Components/ProfileUpdate/ProfileUpdate";
+import PrivateRoute from "../Provider/PrivateRoute";
+import ForgotPassword from "../Components/ForgetPassword/ForgetPassword";
+import Error404 from "../Components/Error404/Error404";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomeLayout></HomeLayout>,
+    element: <HomeLayout />,
     children: [
       {
         path: "/",
-        element: <Home></Home>,
+        element: <Home />,
       },
       {
         path: "/services",
-        element: <Services></Services>,
+        element: (
+          <PrivateRoute>
+            <Services />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/services/:id",
-        element: <ServiceDetails></ServiceDetails>,
+        element: (
+          <PrivateRoute>
+            <ServiceDetails />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/profile",
-        element: <Profile></Profile>,
+        element:<Profile />
+          
       },
       {
         path: "/profile/update",
-        element: <ProfileUpdate></ProfileUpdate>,
+        element:<ProfileUpdate />
+         
       },
       {
         path: "/login",
-        element: <Login></Login>,
+        element: <Login />,
       },
       {
         path: "/register",
-        element: <Register></Register>,
+        element: <Register />,
       },
+      {
+        path: "/forgotpassword",
+        element: <ForgotPassword/>
+      },
+      {
+        path: "/*",
+        element : <Error404></Error404>
+      }
     ],
   },
 ]);

@@ -17,7 +17,7 @@ const Services = () => {
   }
   return (
     <div>
-      <title>Services</title>
+      <title>WarmPaws - Services</title>
       <div className="text-center mt-5 ">
         <h2 className="text-4xl font-extrabold bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent">
           Explore Our Winter Pet Care Services

@@ -2,4 +2,9 @@
 @plugin "daisyui";
 @import 'swiper/css';
 @import 'swiper/css/navigation';
-@import 'ldrs/ring'
+import 'ldrs/ring'
+
+menu a.active {
+    text-decoration: underline;
+
+}

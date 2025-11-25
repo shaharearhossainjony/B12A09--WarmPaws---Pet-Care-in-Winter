@@ -8,7 +8,7 @@
     "rating": 4.9,
     "slotsAvailable": 4,
     "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
-    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    "image": "https://i.ibb.co.com/xtNFv7nb/1111.jpg",
     "category": "Clothing"
   },
   {
@@ -20,7 +20,7 @@
     "rating": 4.8,
     "slotsAvailable": 3,
     "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
-    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    "image": "https://i.ibb.co.com/21Z4tBYG/22.jpg",
     "category": "Grooming"
   },
   {
@@ -32,23 +32,11 @@
     "rating": 4.7,
     "slotsAvailable": 5,
     "description": "Rent a heated and insulated pet bed to keep pets cozy during harsh winter nights.",
-    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    "image": "https://i.ibb.co.com/wrZBtJ4d/3.jpg",
     "category": "Comfort"
   },
   {
     "serviceId": 4,
-    "serviceName": "Snow Walk Assistance",
-    "providerName": "FrostyFriends Pet Care",
-    "providerEmail": "contact@frostyfriends.com",
-    "price": 20,
-    "rating": 4.6,
-    "slotsAvailable": 6,
-    "description": "Safe and supervised winter walks equipped with reflective gear and paw-safe booties.",
-    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
-    "category": "Outdoor"
-  },
-  {
-    "serviceId": 5,
     "serviceName": "Pet Winter Nutrition Planning",
     "providerName": "HealthyTail Nutritionists",
     "providerEmail": "diet@healthytail.com",
@@ -56,11 +44,36 @@
     "rating": 4.9,
     "slotsAvailable": 2,
     "description": "Customized meal plans to boost immunity and energy levels during cold months.",
-    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    "image": "https://i.ibb.co.com/Vcg2X8rD/5.jpg",
     "category": "Nutrition"
   },
   {
+    "serviceId": 5,
+    "serviceName": "Cold Weather Vaccination Check",
+    "providerName": "FrostVet Clinic",
+    "providerEmail": "health@frostvet.com",
+    "price": 50,
+    "rating": 4.9,
+    "slotsAvailable": 2,
+    "description": "Winter health exam and up-to-date vaccinations to ensure seasonal protection.",
+    "image": "https://i.ibb.co.com/B5WwvwJF/A11.jpg",
+    "category": "Health"
+  },
+  {
     "serviceId": 6,
+    "serviceName": "Snow Walk Assistance",
+    "providerName": "FrostyFriends Pet Care",
+    "providerEmail": "contact@frostyfriends.com",
+    "price": 20,
+    "rating": 4.6,
+    "slotsAvailable": 6,
+    "description": "Safe and supervised winter walks equipped with reflective gear and paw-safe booties.",
+    "image": "https://i.ibb.co.com/WpcQRCdR/6.jpg",
+    "category": "Outdoor"
+  },
+
+  {
+    "serviceId": 7,
     "serviceName": "Winter Fur Hydration Treatment",
     "providerName": "Snowflake Groomers",
     "providerEmail": "team@snowflakegroomers.com",
@@ -72,7 +85,7 @@
     "category": "Grooming"
   },
   {
-    "serviceId": 7,
+    "serviceId": 8,
     "serviceName": "Holiday Pet Sitting (Heated Homes)",
     "providerName": "Cozy Critter Sitters",
     "providerEmail": "booking@cozycritters.com",
@@ -84,7 +97,7 @@
     "category": "Sitting"
   },
   {
-    "serviceId": 8,
+    "serviceId": 9,
     "serviceName": "Safe Winter Transport for Pets",
     "providerName": "PawsOnTheGo",
     "providerEmail": "info@pawsonthego.com",
@@ -119,18 +132,7 @@
     "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
     "category": "Clothing"
   },
-  {
-    "serviceId": 11,
-    "serviceName": "Cold Weather Vaccination Check",
-    "providerName": "FrostVet Clinic",
-    "providerEmail": "health@frostvet.com",
-    "price": 50,
-    "rating": 4.9,
-    "slotsAvailable": 2,
-    "description": "Winter health exam and up-to-date vaccinations to ensure seasonal protection.",
-    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
-    "category": "Health"
-  },
+
   {
     "serviceId": 12,
     "serviceName": "Winter Play & Exercise Indoors",
@@ -143,18 +145,7 @@
     "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
     "category": "Activity"
   },
-  {
-    "serviceId": 13,
-    "serviceName": "Winter Paw Wax Protection",
-    "providerName": "PawSafe Studio",
-    "providerEmail": "wax@pawsafe.com",
-    "price": 18,
-    "rating": 4.8,
-    "slotsAvailable": 5,
-    "description": "Protect paws from cracking, ice, and salt with a protective wax coating.",
-    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
-    "category": "Grooming"
-  },
+
   {
     "serviceId": 14,
     "serviceName": "Heated Outdoor Kennel Setup",
@@ -166,53 +157,5 @@
     "description": "Installation of insulated and heated outdoor kennels for winter comfort.",
     "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
     "category": "Comfort"
-  },
-  {
-    "serviceId": 15,
-    "serviceName": "Winter Fitness & Weight Management",
-    "providerName": "FitPets Studio",
-    "providerEmail": "fitness@fitpets.com",
-    "price": 35,
-    "rating": 4.7,
-    "slotsAvailable": 4,
-    "description": "Indoor exercise programs to keep pets active and maintain healthy weight in winter.",
-    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
-    "category": "Activity"
-  },
-  {
-    "serviceId": 16,
-    "serviceName": "Holiday Grooming Packages",
-    "providerName": "SnowGroom Experts",
-    "providerEmail": "groom@snowgroom.com",
-    "price": 45,
-    "rating": 4.8,
-    "slotsAvailable": 3,
-    "description": "Special festive grooming packages including trimming, bathing, and winter paw care.",
-    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
-    "category": "Grooming"
-  },
-  {
-    "serviceId": 17,
-    "serviceName": "Winter Emergency Vet Hotline",
-    "providerName": "FrostyVet 24/7",
-    "providerEmail": "emergency@frostyvet.com",
-    "price": 70,
-    "rating": 4.9,
-    "slotsAvailable": 1,
-    "description": "24/7 winter emergency vet services for frostbite, cold injuries, and urgent care.",
-    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
-    "category": "Health"
-  },
-  {
-    "serviceId": 18,
-    "serviceName": "Cozy Winter Playdates",
-    "providerName": "PetSocial Indoor",
-    "providerEmail": "playdates@petsocial.com",
-    "price": 20,
-    "rating": 4.7,
-    "slotsAvailable": 6,
-    "description": "Organized indoor playdates in heated environments to keep pets social and active.",
-    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
-    "category": "Activity"
   }
 ]
