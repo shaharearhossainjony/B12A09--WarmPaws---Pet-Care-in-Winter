@@ -25,7 +25,7 @@ const ServiceDetailsCard = ({ service }) => {
   };
 
   return (
-    <div className="w-11/12 mx-auto my-10 rounded-2xl shadow-lg bg-white overflow-hidden border border-gray-200">
+    <div className="w-11/12 lg:w-90 mx-auto my-10 rounded-2xl shadow-lg bg-white overflow-hidden border border-gray-200">
       <div className="relative  w-full">
         <img
           src={image}

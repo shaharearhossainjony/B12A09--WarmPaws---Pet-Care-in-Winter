@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Loader from "../Loader/Loader";
 import { Edit3, Mail, UserRound } from "lucide-react";
@@ -6,29 +6,27 @@ import UserIcon from "../../assets/UserIcon.svg";
 import { Link } from "react-router";
 
 const Profile = () => {
-  const { user } = useContext(AuthContext);
+  const { user, loading } = useContext(AuthContext);
 
-
-  if (user === undefined) {
+  if (loading || user === undefined) {
     return <Loader />;
   }
 
-
-  if (!user) {
+  if (user === null) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
         <div className="bg-white shadow-xl rounded-2xl p-8 max-w-md w-full text-center">
           <div className="flex justify-center mb-5">
             <div className="w-32 h-32 rounded-full border-4 border-[#7F00FF] shadow">
               <img
-                src={UserIcon || "https://i.ibb.co/4pDNDk1/avatar.png"}
+                src={UserIcon}
                 alt="Guest"
-                className="w-full h-full rounded-full color-[#7F00FF]"
+                className="w-full h-full rounded-full"
               />
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold bg-gradient-to-r font-bold from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent flex items-center justify-center gap-2">
+          <h2 className="text-3xl font-bold bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent flex items-center justify-center gap-2">
             <UserRound color="#7F00FF" /> Guest User
           </h2>
 
@@ -49,12 +47,12 @@ const Profile = () => {
     );
   }
 
-
   const { displayName, email, photoURL } = user;
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
       <title>WarmPaws - Profile</title>
+
       <div className="bg-white shadow-xl rounded-2xl p-8 max-w-md w-full text-center">
         <div className="flex justify-center mb-5">
           <img
@@ -65,7 +63,6 @@ const Profile = () => {
         </div>
 
         <h2 className="text-2xl font-bold text-gray-800">{displayName}</h2>
-
         <p className="text-gray-600 mt-1">{email}</p>
 
         <Link
@@ -80,4 +77,3 @@ const Profile = () => {
 };
 
 export default Profile;
-
