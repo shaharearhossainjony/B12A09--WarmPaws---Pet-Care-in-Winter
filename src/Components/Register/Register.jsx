@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router";
 
 const Register = () => {
   const { createUser, updateUser, googleSignIn } = useContext(AuthContext);
@@ -11,6 +12,8 @@ const Register = () => {
   const [passwordError, setPasswordError] = useState("");
   const [firebaseError, setFirebaseError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleRegisterBtn = (event) => {
     event.preventDefault();
@@ -43,20 +46,19 @@ const Register = () => {
     }
 
     createUser(email, password)
-      .then((result) => {
-        updateUser({ displayName: name, photoURL })
-          .then(() => {
-            form.reset();
-          })
-          .catch((err) => console.log(err));
+      .then(() => {
+        updateUser({ displayName: name, photoURL }).then(() => {
+          form.reset();
+          navigate("/");
+        });
       })
-      .catch((error) => {
-        setFirebaseError(error.message);
-      });
+      .catch((error) => setFirebaseError(error.message));
   };
 
   const handleGoogleSignIn = () => {
-    googleSignIn().catch((error) => console.error(error));
+    googleSignIn()
+      .then(() => navigate("/"))
+      .catch((error) => console.error(error));
   };
 
   return (
@@ -123,13 +125,12 @@ const Register = () => {
                 <p className="text-xs text-error">{firebaseError}</p>
               )}
 
-              <Link
-                to="/"
+              <button
                 type="submit"
                 className="btn bg-purple-700 hover:bg-purple-800 text-white mt-4"
               >
                 Register
-              </Link>
+              </button>
 
               <button
                 onClick={handleGoogleSignIn}
@@ -167,7 +168,7 @@ const Register = () => {
               </button>
 
               <p className="font-semibold text-center pt-5">
-                Already Have An Account ?{" "}
+                Already Have An Account ?
                 <Link
                   className="bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent"
                   to="/login"
