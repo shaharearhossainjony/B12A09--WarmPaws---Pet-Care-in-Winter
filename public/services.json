@@ -81,7 +81,7 @@
     "rating": 4.8,
     "slotsAvailable": 4,
     "description": "Deep moisturizing treatment to prevent dry skin and static in winter.",
-    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    "image": "https://i.ibb.co.com/2YY7d2Zs/7.jpg",
     "category": "Grooming"
   },
   {
@@ -93,7 +93,7 @@
     "rating": 4.9,
     "slotsAvailable": 3,
     "description": "In-home pet sitting with warm indoor environments and daily winter-safe care routines.",
-    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    "image": "https://i.ibb.co.com/SDnzHmB9/88.jpg",
     "category": "Sitting"
   },
   {
@@ -105,57 +105,8 @@
     "rating": 4.7,
     "slotsAvailable": 5,
     "description": "Temperature-controlled vehicle transport for pets during cold weather trips.",
-    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+    "image": "https://i.ibb.co.com/xSqBFfsq/9.jpg",
     "category": "Transport"
-  },
-  {
-    "serviceId": 9,
-    "serviceName": "Winter Anxiety Relief Session",
-    "providerName": "ChillPaws Therapy",
-    "providerEmail": "care@chillpaws.com",
-    "price": 28,
-    "rating": 4.8,
-    "slotsAvailable": 4,
-    "description": "Relaxation and behavioral support sessions for pets stressed by winter storms.",
-    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
-    "category": "Wellness"
-  },
-  {
-    "serviceId": 10,
-    "serviceName": "Bootie Fitting & Anti-Slip Protection",
-    "providerName": "WinterPaws Outfitters",
-    "providerEmail": "fit@winterpaws.com",
-    "price": 22,
-    "rating": 4.6,
-    "slotsAvailable": 6,
-    "description": "Custom boot fitting to protect paws from ice, salt, and slippery surfaces.",
-    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
-    "category": "Clothing"
-  },
-
-  {
-    "serviceId": 12,
-    "serviceName": "Winter Play & Exercise Indoors",
-    "providerName": "IndoorPet Fun Center",
-    "providerEmail": "play@indoorpetfun.com",
-    "price": 15,
-    "rating": 4.7,
-    "slotsAvailable": 7,
-    "description": "Warm indoor play sessions to keep pets active when it's too cold outside.",
-    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
-    "category": "Activity"
-  },
-
-  {
-    "serviceId": 14,
-    "serviceName": "Heated Outdoor Kennel Setup",
-    "providerName": "WarmTail Solutions",
-    "providerEmail": "setup@warmtail.com",
-    "price": 60,
-    "rating": 4.9,
-    "slotsAvailable": 2,
-    "description": "Installation of insulated and heated outdoor kennels for winter comfort.",
-    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
-    "category": "Comfort"
   }
+  
 ]
