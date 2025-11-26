@@ -38,13 +38,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/profile",
-        element:<Profile />
-          
+        element: <Profile />,
       },
       {
         path: "/profile/update",
-        element:<ProfileUpdate />
-         
+        element: (
+          <PrivateRoute>
+            <ProfileUpdate />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/login",
@@ -56,12 +58,12 @@ const router = createBrowserRouter([
       },
       {
         path: "/forgotpassword",
-        element: <ForgotPassword/>
+        element: <ForgotPassword />,
       },
       {
         path: "/*",
-        element : <Error404></Error404>
-      }
+        element: <Error404></Error404>,
+      },
     ],
   },
 ]);
