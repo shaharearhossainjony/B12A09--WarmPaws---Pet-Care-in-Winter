@@ -1,43 +1,41 @@
-# WarmPaws ❄️🐾
+# WarmPaws
 
-**A cozy winter care platform for pets** – Keep your furry friends warm, healthy, and happy during the cold seasons.
+**A cozy winter care platform for pets** – Keep your one-stop solution to keep furry friends warm, safe, and happy during the cold season.
 
-**Live Demo:** https://warmpaws-pet-winter-care.netlify.app  
-*(Deployed on Netlify – fully responsive & live)*
+**Live Demo:** https://warmpaws---pet-care-in-winter.web.app/  
+**GitHub Repository:** https://github.com/shaharearhossainjony/B12A09--WarmPaws---Pet-Care-in-Winter
 
 ### Purpose
-WarmPaws is a beautiful, user-friendly React application designed to help pet owners discover winter-specific pet care services, expert veterinarians, useful winter tips, and adorable pet outfits. It includes user authentication (Email/Password + Google), private routes, profile management, service booking simulation, and a modern UI with animations.
+WarmPaws is a responsive React single-page application built for Assignment-09. It provides winter pet care services, expert vet profiles, useful care tips, and a complete user authentication system with private routes.
 
 ### Key Features
-- **Hero Slider** with stunning winter pet images (Swiper.js)
-- **Popular Winter Services** – Browse & view detailed service pages
-- **Expert Vets Section** with animated hover cards
-- **Winter Care Tips** with emoji icons and motion animations
-- **User Authentication** (Firebase):
-  - Login / Register
+- Hero slider with beautiful winter pet images (Swiper)
+- Popular Winter Services section (6+ cards from `services.json`)
+- Expert Vets showcase with animated hover cards (`expertsData.json`)
+- Winter Care Tips section with icons (`WinterTips.json`)
+- Firebase Authentication
+  - Email/Password login & registration (with validation)
   - Google Sign-In
-  - Forgot Password (sends reset link)
-  - Update Profile (Name + Photo URL)
-- **Private Routes** – Services & Service Details are protected
-- **Responsive Design** – Works perfectly on mobile, tablet, and desktop
-- **404 Error Page** with navigation options
-- **Booking Simulation** – Fill name/email → success toast
-- **Modern Animations** using Framer Motion (`motion/react-client`)
-- **Tailwind CSS + DaisyUI** for fast, beautiful styling
+  - Forgot Password (email reset link)
+  - Update Profile (name + photo URL)
+- Private Routes – `/services` and `/services/:id` require login
+- Service booking simulation with success message
+- Fully responsive design (mobile, tablet, desktop)
+- Modern animations using Framer Motion (`motion/react-client`)
+- Custom 404 page and loading spinner
+- Tailwind CSS + DaisyUI styling with purple gradient theme
 
-### Tech Stack & NPM Packages Used
+### Tech Stack & NPM Packages
+| Package                              | Purpose                              |
+|--------------------------------------|--------------------------------------|
+| `react`                              | Core library                         |
+| `react-router-dom`                   | Routing & navigation                 |
+| `firebase`                           | Authentication & hosting             |
+| `swiper` + `swiper/react`            | Hero carousel                        |
+| `framer-motion` (`motion/react-client`) | Animations                        |
+| `ldrs`                               | TailChase loader                     |
+| `@fortawesome/react-fontawesome`     | Password toggle icons                |
+| `@fortawesome/free-solid-svg-icons`  | Eye icons                            |
+| `lucide-react`                       | Profile & UI icons                   |
+| `daisyui` + `tailwindcss`            | Styling & components                 |
 
-| Package                     | Purpose                                      |
-|----------------------------|-----------------------------------------------|
-| `react`                    | Core library                                  |
-| `react-router-dom`         | Client-side routing                           |
-| `react-router`             | Navigation & protected routes                 |
-| `firebase`                 | Authentication (Email, Google, Reset Password)|
-| `swiper`                   | Hero image carousel                           |
-| `framer-motion` (`motion/react-client`) | Smooth hover & scale animations       |
-| `ldrs`                      | Cute loading spinner (TailChase)              |
-| `@fortawesome/react-fontawesome` + icons | Eye icons for password toggle         |
-| `lucide-react`             | Icons in profile section                      |
-| `daisyui` + `tailwindcss`  | Beautiful components & utility-first styling  |
-
-### Project Structure (Key Folders)
