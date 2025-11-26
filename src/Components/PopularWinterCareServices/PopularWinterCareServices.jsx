@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ServiceCard from "../ServiceCard/ServiceCard";
 import Loader from "../Loader/Loader";
+import 'animate.css'
 
 const PopularWinterCareServices = () => {
   const [careServices, setCareServices] = useState([]);
@@ -16,11 +17,11 @@ const PopularWinterCareServices = () => {
   }
   return (
     <div className="my-10 text-center">
-      <h2 className="text-3xl font-extrabold bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent">
+      <h2 className="animate__animated animate__pulse  text-3xl font-extrabold bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent">
         Popular Winter Care Services
       </h2>
       <div className="w-11/12  mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-10 ">
-        {careServices.slice(0,6).map((service) => (
+        {careServices.slice(0, 6).map((service) => (
           <ServiceCard key={service.serviceId} service={service}></ServiceCard>
         ))}
       </div>

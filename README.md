@@ -1,61 +1,43 @@
-# WarmPaws — Pet Care in Winter
+# WarmPaws ❄️🐾
 
-## 📌 Project Category
+**A cozy winter care platform for pets** – Keep your furry friends warm, healthy, and happy during the cold seasons.
 
-**Assignment-09_category_rose**
+**Live Demo:** https://warmpaws-pet-winter-care.netlify.app  
+*(Deployed on Netlify – fully responsive & live)*
 
-## 🔎 Project Purpose
+### Purpose
+WarmPaws is a beautiful, user-friendly React application designed to help pet owners discover winter-specific pet care services, expert veterinarians, useful winter tips, and adorable pet outfits. It includes user authentication (Email/Password + Google), private routes, profile management, service booking simulation, and a modern UI with animations.
 
-WarmPaws is a cozy winter companion platform built for pet owners to help keep their furry friends warm, safe, and healthy during cold months. The app lets users explore local winter pet-care services, browse winter clothing and grooming options, learn expert tips, and book services — all with a friendly, responsive single-page interface.
+### Key Features
+- **Hero Slider** with stunning winter pet images (Swiper.js)
+- **Popular Winter Services** – Browse & view detailed service pages
+- **Expert Vets Section** with animated hover cards
+- **Winter Care Tips** with emoji icons and motion animations
+- **User Authentication** (Firebase):
+  - Login / Register
+  - Google Sign-In
+  - Forgot Password (sends reset link)
+  - Update Profile (Name + Photo URL)
+- **Private Routes** – Services & Service Details are protected
+- **Responsive Design** – Works perfectly on mobile, tablet, and desktop
+- **404 Error Page** with navigation options
+- **Booking Simulation** – Fill name/email → success toast
+- **Modern Animations** using Framer Motion (`motion/react-client`)
+- **Tailwind CSS + DaisyUI** for fast, beautiful styling
 
-## 🌐 Live URL
+### Tech Stack & NPM Packages Used
 
-`https://your-live-url-here`  
-_(Replace with your Netlify / Firebase / Surge deployment link.)_
+| Package                     | Purpose                                      |
+|----------------------------|-----------------------------------------------|
+| `react`                    | Core library                                  |
+| `react-router-dom`         | Client-side routing                           |
+| `react-router`             | Navigation & protected routes                 |
+| `firebase`                 | Authentication (Email, Google, Reset Password)|
+| `swiper`                   | Hero image carousel                           |
+| `framer-motion` (`motion/react-client`) | Smooth hover & scale animations       |
+| `ldrs`                      | Cute loading spinner (TailChase)              |
+| `@fortawesome/react-fontawesome` + icons | Eye icons for password toggle         |
+| `lucide-react`             | Icons in profile section                      |
+| `daisyui` + `tailwindcss`  | Beautiful components & utility-first styling  |
 
-## 📁 Repository
-
-`https://github.com/your-username/your-repo`  
-_(Replace with your GitHub repo link.)_
-
----
-
-## ✨ Key Features (implements assignment requirements)
-
-- **Responsive Layout** — Mobile, tablet and desktop friendly (Tailwind + DaisyUI).
-- **Navbar & Footer** — Persistent across routes. Navbar shows Login/Register or user avatar + logout when authenticated; avatar hover shows displayName.
-- **Authentication** — Firebase Email/Password + Google Sign-In. Login, Register, Forget Password pages. Protected routes redirect to login and then back after successful auth.
-- **Services JSON** — Local `services.json` with ≥ 6 winter pet-care service objects (image URLs hosted via PostImage/ImgBB).
-- **Home Page**:
-  - Swiper.js hero slider showcasing winter-themed pet images.
-  - Popular Winter Care Services grid (image, name, rating, price, view details).
-  - Winter Care Tips section (static JSON or inline data).
-  - Meet Our Expert Vets (static 3–4 experts).
-  - Extra section: "Winter Clothing Collections" (or similar relevant addition).
-- **Service Details (Protected)** — Full service data display + "Book Service" form (Name & Email). On submit shows toast success and clears form.
-- **Profile & Update** — My Profile page shows name, email, image; Update Profile page uses `updateProfile()` to change name/photo.
-- **Forget Password Flow** — Pre-fills email if provided from login page; reset button sends reset email and opens Gmail.
-- **Password Requirements & Toggle** — Register enforces password rules (min 6, uppercase, lowercase) and shows inline errors. Login/Register password fields include eye toggle.
-- **SPA Behavior** — Proper routing to avoid reload errors (React Router + hosting rewrite settings).
-- **Toasts & Animations** — Uses `react-hot-toast` for notifications and `AOS` / `swiper` / `framer-motion` for subtle animations.
-
----
-
-## 📦 NPM Packages Used
-
-- `react`
-- `react-dom`
-- `react-router-dom`
-- `firebase`
-- `axios` (if used for any fetch)
-- `tailwindcss`
-- `daisyui`
-- `swiper`
-- `react-hot-toast`
-- `aos` (or `framer-motion` for animations)
-- `react-icons`
-- `lottie-react` (optional)
-- `ldrs` (or similar loader package) — optional for loader component
-- `eslint`, `prettier` (dev)
-
----
+### Project Structure (Key Folders)

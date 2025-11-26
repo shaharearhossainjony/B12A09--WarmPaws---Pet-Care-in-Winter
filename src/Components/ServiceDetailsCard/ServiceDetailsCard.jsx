@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 const ServiceDetailsCard = ({ service }) => {
   const {
@@ -24,9 +25,16 @@ const ServiceDetailsCard = ({ service }) => {
     setTimeout(() => setSuccess(false), 2000);
   };
 
+  useEffect(() => {
+    if (success) {
+      toast.success("Successfully created!");
+    }
+  }, [success]);
+
   return (
     <div className="w-11/12 lg:w-90 mx-auto my-10 rounded-2xl shadow-lg bg-white overflow-hidden border border-gray-200">
-      <div className="relative  w-full">
+      <Toaster />
+      <div className="relative w-full">
         <img
           src={image}
           alt={serviceName}
@@ -95,12 +103,6 @@ const ServiceDetailsCard = ({ service }) => {
             Book Now
           </button>
         </form>
-
-        {success && (
-          <div className="alert alert-success mt-3 py-2 rounded-lg">
-            <span>Booking Successful!</span>
-          </div>
-        )}
       </div>
     </div>
   );

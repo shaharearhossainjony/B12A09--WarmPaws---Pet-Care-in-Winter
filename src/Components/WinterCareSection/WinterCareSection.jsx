@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import WinterTipsCard from "../WinterTipsCard/WinterTipsCard";
 import Loader from "../Loader/Loader";
+import 'animate.css'
 
 const WinterCareSection = () => {
   const [winterTips, setWinterTips] = useState([]);
@@ -23,7 +24,7 @@ const WinterCareSection = () => {
 
   return (
     <div className="my-5 text-center">
-      <h2 className="text-3xl font-extrabold bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent">
+      <h2 className="animate__animated animate__pulse  text-3xl font-extrabold bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent">
         Winter Care Section
       </h2>
 

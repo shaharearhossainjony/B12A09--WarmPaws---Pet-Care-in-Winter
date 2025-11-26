@@ -110,9 +110,9 @@ const Register = () => {
                   className="absolute right-3 top-3 cursor-pointer text-sm"
                 >
                   {showPassword ? (
-                    <FontAwesomeIcon icon={faEyeSlash} />
-                  ) : (
                     <FontAwesomeIcon icon={faEye} />
+                  ) : (
+                    <FontAwesomeIcon icon={faEyeSlash} />
                   )}
                 </span>
               </div>
@@ -168,7 +168,7 @@ const Register = () => {
               </button>
 
               <p className="font-semibold text-center pt-5">
-                Already Have An Account ?
+                Already Have An Account ?{" "}
                 <Link
                   className="bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent"
                   to="/login"

@@ -1,6 +1,8 @@
 import React from "react";
 import { useRouteError, useNavigate } from "react-router";
-import ErrorImg from "../../assets/error-404.png";
+import ErrorImg3 from "../../assets/download2.png";
+import 'animate.css'
+
 
 const Error404 = () => {
   const error = useRouteError();
@@ -12,11 +14,11 @@ const Error404 = () => {
   return (
     <div className="error-page-container">
       <div className="flex justify-center items-center">
-        <img src={ErrorImg} alt="404 Error" />
+        <img className="w-[400px] h-[200]" src={ErrorImg3} alt="404 Error" />
       </div>
 
       <div className="error-message text-center">
-        <h2 className=" py-5 text-3xl font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
+        <h2 className="animate__animated animate__wobble py-5 text-3xl font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
           Oops! Page Not Found
         </h2>
         <p className="text-gray-500">

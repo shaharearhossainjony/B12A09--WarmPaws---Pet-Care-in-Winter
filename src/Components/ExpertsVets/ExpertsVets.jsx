@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import * as motion from "motion/react-client";
 import Loader from "../Loader/Loader";
+import 'animate.css'
 
 const ExpertsVets = () => {
   const [experts, setExperts] = useState([]);
@@ -20,7 +21,7 @@ const ExpertsVets = () => {
   return (
     <div className="my-5 text-center">
       <div className="py-16 bg-gray-50">
-        <h2 className="text-center text-3xl font-bold bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent mb-10">
+        <h2 className="animate__animated animate__pulse  text-center text-3xl font-bold bg-gradient-to-r from-[#7F00FF] to-[#E100FF] bg-clip-text text-transparent mb-10">
           Meet Our Expert Vets
         </h2>
 
